@@ -1,0 +1,57 @@
+
+*** Running vivado
+    with args -log dram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dram.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source dram.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 284.129 ; gain = 74.172
+INFO: [Synth 8-638] synthesizing module 'dram' [e:/project/jizu/CPU1/CPU1.srcs/sources_1/ip/dram/synth/dram.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'dram' (4#1) [e:/project/jizu/CPU1/CPU1.srcs/sources_1/ip/dram/synth/dram.vhd:69]
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 324.063 ; gain = 114.105
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 324.063 ; gain = 114.105
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.198 . Memory (MB): peak = 594.449 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 594.449 ; gain = 384.492
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++---------------------+-----------------------------------------------------------+----------------+----------------------+-----------------+
+|Module Name          | RTL Object                                                | Inference      | Size (Depth x Width) | Primitives      | 
++---------------------+-----------------------------------------------------------+----------------+----------------------+-----------------+
+|dist_mem_gen_v8_0_11 | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | User Attribute | 64 x 32              | RAM64X1S x 32   | 
++---------------------+-----------------------------------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:53 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:53 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:53 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 594.449 ; gain = 384.492
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 594.449 ; gain = 384.492
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |RAM64X1S |    32|
+|2     |FDRE     |    32|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 594.449 ; gain = 384.492
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 594.449 ; gain = 384.492

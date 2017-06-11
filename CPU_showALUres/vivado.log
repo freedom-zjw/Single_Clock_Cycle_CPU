@@ -1,0 +1,660 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Jun 11 20:55:39 2017
+# Process ID: 10968
+# Current directory: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10540 C:\Users\freedom\Desktop\Single_Clock_Cycle_CPU\CPU_showALUres\CPU1.xpr
+# Log file: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/vivado.log
+# Journal file: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 802.395 ; gain = 114.887
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v" into library work [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v" into library work [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v" into library work [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v" into library work [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v" into library work [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v" into library work [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v" into library work [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v:1]
+[Sun Jun 11 21:06:41 2017] Launched synth_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Jun 11 21:07:50 2017] Launched impl_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2016.3/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'topsim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/dram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/RAM.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/irom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/ROM.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj topsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom/sim/irom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smg_ip_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sim_1/new/topsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto a8eafffc7c414fbe855a6b9697c0756d --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ctr
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.aluctr
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.irom
+Compiling module xil_defaultlib.regFile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.smg_ip_model
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.topsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topsim_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jun 11 21:11:03 2017. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 11 21:11:03 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 857.809 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topsim_behav -key {Behavioral:sim_1:Functional:topsim} -tclbatch {topsim.tcl} -view {C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/topsim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+open_wave_config C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/topsim_behav.wcfg
+WARNING: Simulation object /topsim/uut/jal was not found in the design.
+WARNING: Simulation object /topsim/uut/mux_jal was not found in the design.
+WARNING: Simulation object /topsim/uut/mux_write_addr was not found in the design.
+source topsim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topsim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:26 . Memory (MB): peak = 857.809 ; gain = 0.000
+run 200 ns
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 890.148 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/.Xil/Vivado-10968-Freedom-computer/dcp/top.xdc]
+Finished Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/.Xil/Vivado-10968-Freedom-computer/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.178 . Memory (MB): peak = 1082.125 ; gain = 0.977
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 1082.125 ; gain = 0.977
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM64X1S => RAM64X1S (inverted pins: WCLK) (RAMS64E): 32 instances
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1181.520 ; gain = 291.371
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jun 11 21:23:46 2017] Launched impl_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.3
+  **** Build date : Oct 10 2016-19:47:06
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A2823CA
+set_property PROGRAM.FILE {C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_3
+Design is defaulting to synth run part: xc7a35ticpg236-1L
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/dram.dcp' for cell 'dmem'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom/irom.dcp' for cell 'imem'
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'regFile' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/constrs_3/new/show.xdc]
+Finished Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/constrs_3/new/show.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/dram.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom/irom.dcp'
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM64X1S => RAM64X1S (inverted pins: WCLK) (RAMS64E): 32 instances
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1835.930 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2016.3/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'topsim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/dram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/RAM.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/irom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/ROM.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj topsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom/sim/irom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smg_ip_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sim_1/new/topsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto a8eafffc7c414fbe855a6b9697c0756d --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ctr
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.aluctr
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.irom
+Compiling module xil_defaultlib.regFile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.smg_ip_model
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.topsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topsim_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jun 11 21:27:24 2017. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 11 21:27:24 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1835.930 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topsim_behav -key {Behavioral:sim_1:Functional:topsim} -tclbatch {topsim.tcl} -view {C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/topsim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+open_wave_config C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/topsim_behav.wcfg
+WARNING: Simulation object /topsim/uut/jal was not found in the design.
+WARNING: Simulation object /topsim/uut/mux_jal was not found in the design.
+WARNING: Simulation object /topsim/uut/mux_write_addr was not found in the design.
+source topsim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topsim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1835.930 ; gain = 0.000
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 ns
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1852.363 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+remove_files  -fileset irom C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom/irom.xci
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/irom_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom/irom.xci' from fileset 'irom' to fileset 'sources_1'.
+file delete -force C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.ip_user_files/ip/irom C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.ip_user_files/sim_scripts/irom
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name irom
+set_property -dict [list CONFIG.depth {128} CONFIG.data_width {32} CONFIG.memory_type {rom} CONFIG.input_options {registered} CONFIG.coefficient_file {C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/ROM.coe}] [get_ips irom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/ROM.coe' provided. It will be converted relative to IP Instance files '../../../../ROM.coe'
+generate_target {instantiation_template} [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'irom'...
+generate_target all [get_files  c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'irom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'irom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'irom'...
+catch { config_ip_cache -export [get_ips -all irom] }
+export_ip_user_files -of_objects [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci]
+launch_runs -jobs 4 irom_synth_1
+[Sun Jun 11 21:36:52 2017] Launched irom_synth_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/irom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci] -directory C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.ip_user_files -ipstatic_source_dir C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.cache/compile_simlib/modelsim} {questa=C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.cache/compile_simlib/questa} {riviera=C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.cache/compile_simlib/riviera} {activehdl=C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1888.035 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2016.3/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'topsim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/dram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/RAM.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/ROM.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/irom.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj topsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/sim/irom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smg_ip_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sim_1/new/topsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto a8eafffc7c414fbe855a6b9697c0756d --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ctr
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.aluctr
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.irom
+Compiling module xil_defaultlib.regFile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.smg_ip_model
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.topsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topsim_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jun 11 21:39:54 2017. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 11 21:39:54 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1888.035 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topsim_behav -key {Behavioral:sim_1:Functional:topsim} -tclbatch {topsim.tcl} -view {C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/topsim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+open_wave_config C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/topsim_behav.wcfg
+WARNING: Simulation object /topsim/uut/jal was not found in the design.
+WARNING: Simulation object /topsim/uut/mux_jal was not found in the design.
+WARNING: Simulation object /topsim/uut/mux_write_addr was not found in the design.
+source topsim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topsim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1888.035 ; gain = 0.000
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1888.035 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v" into library work [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v:1]
+[Sun Jun 11 21:42:54 2017] Launched synth_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Jun 11 21:44:58 2017] Launched impl_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jun 11 21:46:14 2017] Launched impl_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v" into library work [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:1]
+[Sun Jun 11 21:51:42 2017] Launched synth_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Jun 11 21:53:59 2017] Launched impl_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jun 11 21:55:12 2017] Launched impl_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+add_wave {{/topsim/uut/regfile/RtAddr}} 
+set_property -dict [list CONFIG.coefficient_file {C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/ROM.coe}] [get_ips irom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/ROM.coe' provided. It will be converted relative to IP Instance files '../../../../ROM.coe'
+generate_target all [get_files  c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'irom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'irom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'irom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'irom'...
+catch { config_ip_cache -export [get_ips -all irom] }
+export_ip_user_files -of_objects [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci] -no_script -sync -force -quiet
+reset_run irom_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/irom_synth_1
+
+launch_runs -jobs 4 irom_synth_1
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'irom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'irom'...
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Synthesis'. Expected 'Generated', got 'Stale' for source 'c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci'
+[Sun Jun 11 22:10:41 2017] Launched irom_synth_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/irom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci] -directory C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.ip_user_files -ipstatic_source_dir C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.cache/compile_simlib/modelsim} {questa=C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.cache/compile_simlib/questa} {riviera=C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.cache/compile_simlib/riviera} {activehdl=C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_wave_config {C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/topsim_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1921.637 ; gain = 0.000
+generate_target Simulation [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'irom'...
+export_ip_user_files -of_objects [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci] -no_script -force -quiet
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2016.3/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'topsim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/dram.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/RAM.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/ROM.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/irom.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj topsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/sim/irom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smg_ip_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sim_1/new/topsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto a8eafffc7c414fbe855a6b9697c0756d --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ctr
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.aluctr
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.irom
+Compiling module xil_defaultlib.regFile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.smg_ip_model
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.topsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topsim_behav
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/xsim_webtalk.tcl -notrace
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1921.637 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-4704] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1921.637 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+reset_run irom_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'irom'...
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Synthesis'. Expected 'Generated', got 'Stale' for source 'c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci'
+[Sun Jun 11 22:11:47 2017] Launched irom_synth_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/irom_synth_1/runme.log
+[Sun Jun 11 22:11:47 2017] Launched synth_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/runme.log
+reset_run irom_synth_1
+launch_runs impl_1 -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'irom'...
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Synthesis'. Expected 'Generated', got 'Stale' for source 'c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci'
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Jun 11 22:14:05 2017] Launched irom_synth_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/irom_synth_1/runme.log
+[Sun Jun 11 22:14:05 2017] Launched impl_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/runme.log
+reset_run synth_1
+reset_run irom_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'irom'...
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Synthesis'. Expected 'Generated', got 'Stale' for source 'c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.xci'
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Jun 11 22:15:25 2017] Launched irom_synth_1, synth_1...
+Run output will be captured here:
+irom_synth_1: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/irom_synth_1/runme.log
+synth_1: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/runme.log
+[Sun Jun 11 22:15:25 2017] Launched impl_1...
+Run output will be captured here: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 11 22:20:37 2017...

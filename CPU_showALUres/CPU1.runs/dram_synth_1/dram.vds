@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Jun 10 21:29:57 2017
+# Process ID: 20880
+# Current directory: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/dram_synth_1
+# Command line: vivado.exe -log dram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dram.tcl
+# Log file: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/dram_synth_1/dram.vds
+# Journal file: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/dram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dram.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dram, cache-ID = 13c98ea86e39a453.

@@ -1,0 +1,642 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Jun 09 08:33:35 2017
+# Process ID: 11088
+# Current directory: E:/project/jizu/CPU_showALUres
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10904 E:\project\jizu\CPU_showALUres\CPU1.xpr
+# Log file: E:/project/jizu/CPU_showALUres/vivado.log
+# Journal file: E:/project/jizu/CPU_showALUres\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/project/jizu/CPU_showALUres/CPU1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/viwado1/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 714.742 ; gain = 112.758
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/viwado1/Vivado/2016.3/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'topsim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/ROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/dram.mif'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/RAM.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj topsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smg_ip_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sim_1/new/topsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/viwado1/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto a8eafffc7c414fbe855a6b9697c0756d --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ctr
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.aluctr
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.regFile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.smg_ip_model
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.topsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topsim_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun 09 08:36:43 2017...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 725.629 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topsim_behav -key {Behavioral:sim_1:Functional:topsim} -tclbatch {topsim.tcl} -view {E:/project/jizu/CPU_showALUres/topsim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+open_wave_config E:/project/jizu/CPU_showALUres/topsim_behav.wcfg
+source topsim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topsim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 726.770 ; gain = 12.027
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 734.719 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.3
+  **** Build date : Oct 10 2016-19:47:06
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27EF9A
+set_property PROGRAM.FILE {E:/project/jizu/CPU_showALUres/CPU1.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {E:/project/jizu/CPU_showALUres/CPU1.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {E:/project/jizu/CPU_showALUres/CPU1.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210183A27EF9A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27EF9A
+save_wave_config {E:/project/jizu/CPU_showALUres/topsim_behav.wcfg}
+ERROR: [Wavedata 42-440] There is no current wave configuration open to save
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/viwado1/Vivado/2016.3/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'topsim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/ROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/dram.mif'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/RAM.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj topsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smg_ip_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sim_1/new/topsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/viwado1/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto a8eafffc7c414fbe855a6b9697c0756d --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ctr
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.aluctr
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.regFile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.smg_ip_model
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.topsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topsim_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun 09 10:24:26 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topsim_behav -key {Behavioral:sim_1:Functional:topsim} -tclbatch {topsim.tcl} -view {E:/project/jizu/CPU_showALUres/topsim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+open_wave_config E:/project/jizu/CPU_showALUres/topsim_behav.wcfg
+source topsim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topsim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 916.559 ; gain = 0.000
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 916.559 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+set_property -dict [list CONFIG.input_options {registered}] [get_ips dist_mem_gen_0]
+generate_target all [get_files  E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+reset_run dist_mem_gen_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/project/jizu/CPU_showALUres/CPU1.runs/dist_mem_gen_0_synth_1
+
+launch_runs -jobs 2 dist_mem_gen_0_synth_1
+[Fri Jun 09 10:28:15 2017] Launched dist_mem_gen_0_synth_1...
+Run output will be captured here: E:/project/jizu/CPU_showALUres/CPU1.runs/dist_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory E:/project/jizu/CPU_showALUres/CPU1.ip_user_files/sim_scripts -ip_user_files_dir E:/project/jizu/CPU_showALUres/CPU1.ip_user_files -ipstatic_source_dir E:/project/jizu/CPU_showALUres/CPU1.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/project/jizu/CPU_showALUres/CPU1.cache/compile_simlib/modelsim} {questa=E:/project/jizu/CPU_showALUres/CPU1.cache/compile_simlib/questa} {riviera=E:/project/jizu/CPU_showALUres/CPU1.cache/compile_simlib/riviera} {activehdl=E:/project/jizu/CPU_showALUres/CPU1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/viwado1/Vivado/2016.3/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'topsim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/ROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/dram.mif'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/RAM.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj topsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smg_ip_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sim_1/new/topsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/viwado1/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto a8eafffc7c414fbe855a6b9697c0756d --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ctr
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.aluctr
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.regFile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.smg_ip_model
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.topsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topsim_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun 09 10:31:18 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 924.582 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topsim_behav -key {Behavioral:sim_1:Functional:topsim} -tclbatch {topsim.tcl} -view {E:/project/jizu/CPU_showALUres/topsim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+open_wave_config E:/project/jizu/CPU_showALUres/topsim_behav.wcfg
+source topsim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topsim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 924.582 ; gain = 0.000
+run 60000 ns
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 924.582 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 924.582 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/viwado1/Vivado/2016.3/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'topsim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/ROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/dram.mif'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/RAM.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj topsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smg_ip_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sim_1/new/topsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/viwado1/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto a8eafffc7c414fbe855a6b9697c0756d --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ctr
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.aluctr
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.regFile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.smg_ip_model
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.topsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topsim_behav
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun 09 11:11:01 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topsim_behav -key {Behavioral:sim_1:Functional:topsim} -tclbatch {topsim.tcl} -view {E:/project/jizu/CPU_showALUres/topsim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+open_wave_config E:/project/jizu/CPU_showALUres/topsim_behav.wcfg
+source topsim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topsim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 924.582 ; gain = 0.000
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run' was cancelled
+add_wave {{/topsim/uut/pc_temp}} 
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/viwado1/Vivado/2016.3/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'topsim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/ROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/dram.mif'
+INFO: [SIM-utils-43] Exported 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/RAM.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj topsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/sim/dram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smg_ip_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signext
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aluctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.srcs/sim_1/new/topsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/project/jizu/CPU_showALUres/CPU1.sim/sim_1/behav'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/viwado1/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto a8eafffc7c414fbe855a6b9697c0756d --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topsim_behav xil_defaultlib.topsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ctr
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.aluctr
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dram
+Compiling module dist_mem_gen_v8_0_11.dist_mem_gen_v8_0_11(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.regFile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.smg_ip_model
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.topsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topsim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 938.750 ; gain = 0.000
+run all
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 938.750 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35ticpg236-1L
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:16:09 ; elapsed = 07:57:30 . Memory (MB): peak = 972.176 ; gain = 762.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'ctr' [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v:23]
+WARNING: [Synth 8-567] referenced signal 'zero' should be on the sensitivity list [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v:41]
+INFO: [Synth 8-256] done synthesizing module 'ctr' (1#1) [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-256] done synthesizing module 'alu' (2#1) [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-638] synthesizing module 'aluctr' [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v:32]
+INFO: [Synth 8-256] done synthesizing module 'aluctr' (3#1) [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v:32]
+INFO: [Synth 8-638] synthesizing module 'dram' [E:/project/jizu/CPU_showALUres/.Xil/Vivado-11088-Lenovo-PC/realtime/dram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dram' (4#1) [E:/project/jizu/CPU_showALUres/.Xil/Vivado-11088-Lenovo-PC/realtime/dram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [E:/project/jizu/CPU_showALUres/.Xil/Vivado-11088-Lenovo-PC/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (5#1) [E:/project/jizu/CPU_showALUres/.Xil/Vivado-11088-Lenovo-PC/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'regFile' [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'regFile' (6#1) [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v:23]
+INFO: [Synth 8-638] synthesizing module 'signext' [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v:23]
+INFO: [Synth 8-256] done synthesizing module 'signext' (7#1) [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v:23]
+INFO: [Synth 8-638] synthesizing module 'smg_ip_model' [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:60]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:69]
+WARNING: [Synth 8-567] referenced signal 'switch' should be on the sensitivity list [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:56]
+WARNING: [Synth 8-567] referenced signal 'data' should be on the sensitivity list [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:56]
+WARNING: [Synth 8-151] case item 4'b1111 is unreachable [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:79]
+INFO: [Synth 8-226] default block is never used [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:79]
+INFO: [Synth 8-256] done synthesizing module 'smg_ip_model' (8#1) [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (9#1) [E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:16:11 ; elapsed = 07:57:33 . Memory (MB): peak = 1003.434 ; gain = 793.809
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:16:11 ; elapsed = 07:57:33 . Memory (MB): peak = 1003.434 ; gain = 793.809
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/dram.dcp' for cell 'dmem'
+INFO: [Project 1-454] Reading design checkpoint 'E:/project/jizu/CPU_showALUres/CPU1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'imem'
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/project/jizu/CPU_showALUres/CPU1.srcs/constrs_3/new/show.xdc]
+Finished Parsing XDC File [E:/project/jizu/CPU_showALUres/CPU1.srcs/constrs_3/new/show.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:16:32 ; elapsed = 07:57:56 . Memory (MB): peak = 1305.699 ; gain = 1096.074
+30 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 1305.699 ; gain = 366.789
