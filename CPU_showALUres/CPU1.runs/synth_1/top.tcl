@@ -3,7 +3,6 @@
 # 
 
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7a35ticpg236-1L
@@ -21,8 +20,8 @@ add_files C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/ROM.coe
 add_files C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/RAM.coe
 add_files -quiet c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/dram.dcp
 set_property used_in_implementation false [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/dram.dcp]
-add_files -quiet c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.dcp
-set_property used_in_implementation false [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.dcp]
+add_files -quiet C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.dcp
+set_property used_in_implementation false [get_files C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.dcp]
 read_verilog -library xil_defaultlib {
   C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v
   C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v

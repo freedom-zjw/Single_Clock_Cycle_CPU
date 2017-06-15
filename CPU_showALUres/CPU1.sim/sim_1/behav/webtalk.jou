@@ -2,8 +2,8 @@
 # Webtalk v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Sun Jun 11 22:11:35 2017
-# Process ID: 2152
+# Start of session at: Thu Jun 15 22:59:40 2017
+# Process ID: 18364
 # Current directory: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav
 # Command line: wbtcv.exe -mode batch -source C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/xsim.dir/topsim_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.sim/sim_1/behav/webtalk.log

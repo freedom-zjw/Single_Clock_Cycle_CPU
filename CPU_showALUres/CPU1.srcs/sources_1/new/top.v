@@ -56,7 +56,8 @@ module top(
 	begin
 	   if(reset==0)
         begin
-           if(clk_cnt==32'd25000000-1)
+           if(clk_cnt==32'd100000000-1)
+           //if(clk_cnt==32'd1000-1)  
            begin clk_cnt<=1'b0;
                clk_div=~clk_div;
            end

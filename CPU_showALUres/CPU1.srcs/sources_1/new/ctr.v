@@ -121,7 +121,7 @@ module ctr(
                     memWrite=0;
                     aluop=4'b0001;
                     ExtSel=1;
-                    if(zero==0) PCsrc=2'b00;
+                    if(zero==1) PCsrc=2'b00;
                     else PCsrc=2'b01;    
                 end          
         6'b001000://addi

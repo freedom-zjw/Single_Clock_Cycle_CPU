@@ -42,7 +42,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -60,8 +59,8 @@ set rc [catch {
   add_files -quiet C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/top.dcp
   add_files -quiet c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/dram.dcp
   set_property netlist_only true [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/dram.dcp]
-  add_files -quiet c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.dcp
-  set_property netlist_only true [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.dcp]
+  add_files -quiet C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.dcp
+  set_property netlist_only true [get_files C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom.dcp]
   read_xdc -mode out_of_context -ref dram -cells U0 c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/dram_ooc.xdc
   set_property processing_order EARLY [get_files c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/dram/dram_ooc.xdc]
   read_xdc -mode out_of_context -ref irom -cells U0 c:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/ip/irom_1/irom_ooc.xdc

@@ -35,7 +35,7 @@ module smg_ip_model(
     always@(posedge clkin_)
     if(reset==0)
     begin
-        if(clk_cnt==32'd10000)
+        if(clk_cnt==32'd100000)
         begin
             clk_cnt<=1'b0;clk_400Hz<=~clk_400Hz;
         end

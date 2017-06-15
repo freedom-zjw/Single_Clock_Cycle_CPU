@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Sun Jun 11 22:17:52 2017
+| Date         : Thu Jun 15 23:07:42 2017
 | Host         : Freedom-computer running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              15 |            7 |
+| No           | No                    | No                     |              15 |            8 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              81 |           24 |
+| No           | Yes                   | No                     |              81 |           23 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             224 |          150 |
+| Yes          | Yes                   | No                     |             224 |          163 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -48,20 +48,20 @@ Table of Contents
 +-------------------------------+------------------------------+------------------+------------------+----------------+
 |          Clock Signal         |         Enable Signal        | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +-------------------------------+------------------------------+------------------+------------------+----------------+
-|  smg_/clk_400Hz_reg_n_0       |                              |                  |                1 |              4 |
+|  smg_/clk_400Hz               |                              |                  |                2 |              4 |
 |  smg_/duan_ctr_reg[3]_i_2_n_0 |                              |                  |                4 |              4 |
 |  clk_div_BUFG                 |                              |                  |                2 |              7 |
-| ~clk_div_BUFG                 |                              | reset_IBUF       |                5 |             15 |
-| ~clk_div_BUFG                 | regfile/regs[16][31]_i_1_n_0 | reset_IBUF       |               26 |             32 |
+| ~clk_div_BUFG                 |                              | reset_IBUF       |                6 |             15 |
+| ~clk_div_BUFG                 | regfile/regs[16][31]_i_1_n_0 | reset_IBUF       |               21 |             32 |
 | ~clk_div_BUFG                 | regfile/regs[17][31]_i_1_n_0 | reset_IBUF       |               25 |             32 |
-| ~clk_div_BUFG                 | regfile/regs[18][31]_i_1_n_0 | reset_IBUF       |               17 |             32 |
-| ~clk_div_BUFG                 | regfile/regs[19][31]_i_1_n_0 | reset_IBUF       |               18 |             32 |
-| ~clk_div_BUFG                 | regfile/regs[1][31]_i_1_n_0  | reset_IBUF       |               26 |             32 |
-| ~clk_div_BUFG                 | regfile/regs[2][31]_i_1_n_0  | reset_IBUF       |               16 |             32 |
+| ~clk_div_BUFG                 | regfile/regs[18][31]_i_1_n_0 | reset_IBUF       |               26 |             32 |
+| ~clk_div_BUFG                 | regfile/regs[19][31]_i_1_n_0 | reset_IBUF       |               25 |             32 |
+| ~clk_div_BUFG                 | regfile/regs[1][31]_i_1_n_0  | reset_IBUF       |               21 |             32 |
 | ~clk_div_BUFG                 | regfile/regs[3][31]_i_1_n_0  | reset_IBUF       |               22 |             32 |
+| ~clk_div_BUFG                 | regfile/regs[2][31]_i_1_n_0  | reset_IBUF       |               23 |             32 |
 | ~clk_div_BUFG                 | memWrite                     |                  |                8 |             32 |
-|  clkin_IBUF_BUFG              |                              | reset_IBUF       |                7 |             33 |
-| ~clkin_IBUF_BUFG              |                              | reset_IBUF       |               12 |             33 |
+|  clkin_IBUF_BUFG              |                              | reset_IBUF       |                8 |             33 |
+| ~clkin_IBUF_BUFG              |                              | reset_IBUF       |                9 |             33 |
 +-------------------------------+------------------------------+------------------+------------------+----------------+
 
 
