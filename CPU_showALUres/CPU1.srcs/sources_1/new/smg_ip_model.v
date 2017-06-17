@@ -28,8 +28,7 @@ module smg_ip_model(
         output [3:0] sm_wei,
         output [7:0] sm_duan
     );
-    
-    
+   
     integer clk_cnt;
     reg clk_400Hz;
     always@(posedge clkin_)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="dram_synth_1" LaunchPart="xc7a35ticpg236-1L" LaunchTime="1497101393">
-  <File Type="PA-TCL" Name="dram.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="dram_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="dram.tcl"/>
   <File Type="RDS-RDS" Name="dram.vds"/>
   <File Type="RDS-UTIL" Name="dram_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="dram_utilization_synth.pb"/>

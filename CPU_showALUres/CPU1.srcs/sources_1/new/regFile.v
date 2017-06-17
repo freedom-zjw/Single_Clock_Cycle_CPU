@@ -31,13 +31,14 @@ module regFile(
     input [4:0] RsAddr,
     input [4:0] RtAddr );
     reg[31:0] regs[0:31];
+    //地址是0号寄存器则输出0，否则输出对应数据
     assign RsData=(RsAddr==5'b0)?32'b0:regs[RsAddr];
     assign RtData=(RtAddr==5'b0)?32'b0:regs[RtAddr];
     integer i;
     always@(posedge clk)
     begin
         if(!reset) begin 
-            if(regWriteEn==1)begin
+            if(regWriteEn==1)begin//在时钟上升沿写数据
                 regs[regWriteAddr]=regWriteData;
             end
         end

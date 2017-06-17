@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="irom_synth_1" LaunchPart="xc7a35ticpg236-1L" LaunchTime="1497538847">
-  <File Type="RDS-PROPCONSTRS" Name="irom_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="irom.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="irom_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="irom.vds"/>
   <File Type="RDS-UTIL" Name="irom_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="irom_utilization_synth.pb"/>

@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Thu Jun 15 23:06:25 2017
-# Process ID: 10088
+# Start of session at: Fri Jun 16 09:10:52 2017
+# Process ID: 1876
 # Current directory: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/top.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17112 
+INFO: Helper process launched with PID 9696 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 283.184 ; gain = 73.137
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 283.324 ; gain = 73.383
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v:23]
 INFO: [Synth 8-638] synthesizing module 'ctr' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/ctr.v:23]
@@ -27,10 +27,10 @@ INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/freedom/Desktop/Single_C
 INFO: [Synth 8-256] done synthesizing module 'alu' (2#1) [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/alu.v:23]
 INFO: [Synth 8-638] synthesizing module 'aluctr' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v:22]
 INFO: [Synth 8-256] done synthesizing module 'aluctr' (3#1) [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/aluctr.v:22]
-INFO: [Synth 8-638] synthesizing module 'dram' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-10088-Freedom-computer/realtime/dram_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dram' (4#1) [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-10088-Freedom-computer/realtime/dram_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'irom' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-10088-Freedom-computer/realtime/irom_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'irom' (5#1) [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-10088-Freedom-computer/realtime/irom_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dram' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-1876-Freedom-computer/realtime/dram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dram' (4#1) [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-1876-Freedom-computer/realtime/dram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'irom' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-1876-Freedom-computer/realtime/irom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'irom' (5#1) [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-1876-Freedom-computer/realtime/irom_stub.v:6]
 INFO: [Synth 8-638] synthesizing module 'regFile' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v:23]
 INFO: [Synth 8-256] done synthesizing module 'regFile' (6#1) [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/regFile.v:23]
 INFO: [Synth 8-638] synthesizing module 'signext' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/signext.v:23]
@@ -45,7 +45,7 @@ INFO: [Synth 8-226] default block is never used [C:/Users/freedom/Desktop/Single
 INFO: [Synth 8-256] done synthesizing module 'smg_ip_model' (8#1) [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:23]
 INFO: [Synth 8-256] done synthesizing module 'top' (9#1) [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 320.496 ; gain = 110.449
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 320.637 ; gain = 110.695
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -55,19 +55,19 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 320.496 ; gain = 110.449
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 320.637 ; gain = 110.695
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dram' instantiated as 'dmem' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v:117]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'irom' instantiated as 'imem' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v:127]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dram' instantiated as 'dmem' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v:124]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'irom' instantiated as 'imem' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/top.v:134]
 INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-10088-Freedom-computer/dcp/dram_in_context.xdc] for cell 'dmem'
-Finished Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-10088-Freedom-computer/dcp/dram_in_context.xdc] for cell 'dmem'
-Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-10088-Freedom-computer/dcp_2/irom_in_context.xdc] for cell 'imem'
-Finished Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-10088-Freedom-computer/dcp_2/irom_in_context.xdc] for cell 'imem'
+Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-1876-Freedom-computer/dcp/dram_in_context.xdc] for cell 'dmem'
+Finished Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-1876-Freedom-computer/dcp/dram_in_context.xdc] for cell 'dmem'
+Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-1876-Freedom-computer/dcp_2/irom_in_context.xdc] for cell 'imem'
+Finished Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/.Xil/Vivado-1876-Freedom-computer/dcp_2/irom_in_context.xdc] for cell 'imem'
 Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/constrs_3/new/show.xdc]
 Finished Parsing XDC File [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/constrs_3/new/show.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/constrs_3/new/show.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
@@ -77,22 +77,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 613.785 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 613.918 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 613.785 ; gain = 403.738
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 613.918 ; gain = 403.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticpg236-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 613.785 ; gain = 403.738
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 613.918 ; gain = 403.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 613.785 ; gain = 403.738
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 613.918 ; gain = 403.977
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5587] ROM size for "ExtSel" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5546] ROM "regDst" won't be mapped to RAM because it is too sparse
@@ -143,7 +143,7 @@ INFO: [Synth 8-5545] ROM "clk_cnt" won't be mapped to RAM because address size (
 INFO: [Synth 8-5545] ROM "clk_div" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-327] inferring latch for variable 'duan_ctr_reg' [C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.srcs/sources_1/new/smg_ip_model.v:61]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 613.785 ; gain = 403.738
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 613.918 ; gain = 403.977
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -344,7 +344,7 @@ WARNING: [Synth 8-3332] Sequential element (regfile/regs_reg[0][2]) is unused an
 WARNING: [Synth 8-3332] Sequential element (regfile/regs_reg[0][1]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (regfile/regs_reg[0][0]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 618.613 ; gain = 408.566
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 619.215 ; gain = 409.273
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -359,10 +359,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 618.613 ; gain = 408.566
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 619.215 ; gain = 409.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 618.613 ; gain = 408.566
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 619.215 ; gain = 409.273
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -374,7 +374,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 654.277 ; gain = 444.230
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 658.961 ; gain = 449.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -398,7 +398,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 654.277 ; gain = 444.230
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 658.961 ; gain = 449.020
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -411,7 +411,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 654.277 ; gain = 444.230
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 658.961 ; gain = 449.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -423,25 +423,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 654.277 ; gain = 444.230
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 658.961 ; gain = 449.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 654.277 ; gain = 444.230
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 658.961 ; gain = 449.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 654.277 ; gain = 444.230
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 658.961 ; gain = 449.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 654.277 ; gain = 444.230
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 658.961 ; gain = 449.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -488,11 +488,11 @@ Report Instance Areas:
 |4     |  smg_    |smg_ip_model |   149|
 +------+----------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 654.277 ; gain = 444.230
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 658.961 ; gain = 449.020
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 82 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 654.277 ; gain = 149.445
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 654.277 ; gain = 444.230
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 658.961 ; gain = 154.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 658.961 ; gain = 449.020
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -506,7 +506,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 93 Infos, 89 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 654.277 ; gain = 444.230
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 658.961 ; gain = 449.020
 INFO: [Common 17-1381] The checkpoint 'C:/Users/freedom/Desktop/Single_Clock_Cycle_CPU/CPU_showALUres/CPU1.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 654.277 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 15 23:07:06 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 658.961 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 16 09:11:43 2017...
